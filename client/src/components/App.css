@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+  --lavender-floral: #A479FA;
+  --pale-lavender: #DAD5F1;
+  --ghost-white: #F9F6FA;
+  --lavender-indigo: #9B55F2;
+  --blue-violet: #6B2BDB;
+  --cornflower-blue: #8D4DF2;
+  --portage: #9864F1;
+  --vodka: #C9B7F5;
+  --rebecca-purple: #5E2E99;
+  --max-red: #DC2626;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+
+/*  <-----  Header Styling  ----->  */
+.app-header {
+  display: flex;
+  padding: 0.5rem 1rem;
+  background-color: var(--portage);
+  color: var(--ghost-white);
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px dotted var(--pale-lavender);
+}
+
+.header-title:hover {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px;
+  color: var(--pale-lavender);
+}
+
+
+
+.signin-user{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+header button{
+  border: .1rem solid var(--blue-violet);
+  background: var(--pale-lavender);
+  font-size: 0.9rem;
+  border-radius: 5rem;
+  color: var(--rebecca-purple);
+  padding: .6rem 1.5rem;
+  cursor: pointer;
+}
+
+header button:hover{
+  border: .1rem solid var(--blue-violet);
+  background: var(--vodka);
+  font-size: 0.9rem;
+  border-radius: 5rem;
+  color: var(--rebecca-purple);
+  padding: .6rem 1.5rem;
+  cursor: pointer;
+}
+
+
+/*  <-----  Searh Bar Styling  ----->  */
+.search-bar {
+  background-color: var(--vodka);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: 2px solid var(--cornflower-blue);
+  border-radius: 4px;
+  background-color: var(--ghost-white);
+  color: var(--cornflower-blue);
+  width: 250px;
+}
+
+.search-button {
+  border: .1rem solid var(--cornflower-blue);
+  background: var(--cornflower-blue);
+  font-size: 0.9rem;
+  border-radius: 5rem;
+  color: var(--ghost-white);
+  padding: .6rem 1.5rem;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  border: .1rem solid var(--rebecca-purple);
+  background-color: var(--rebecca-purple);
+}
+
+
+/*  <-----  Main Section Styling  ----->  */
+.main-section {
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+/*  <--- Nav Bar Styling --->  */
+.nav-sidebar {
+  flex: 1;
+  max-width: 250px;
+  background-color: var(--lavender-floral);
+  color: var(--ghost-white);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+/*  <--- Article View Styling --->  */
+.article-view {
+  flex: 3;
+  padding-left: 2rem;
+}
+
+.action-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.action-buttons button {
+  border: .1rem solid var(--lavender-indigo);
+  background: var(--lavender-indigo);
+  font-size: 0.9rem;
+  border-radius: 5rem;
+  color: var(--ghost-white);
+  padding: .6rem 1.5rem;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  border: .1rem solid var(--blue-violet);
+  background-color: var(--blue-violet);
+}
+
+/*  <-----  Add New Article Styling  ----->  */
+.article-entry {
+  background-color: var(--pale-lavender);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input,
+.form-textarea {
+  color: var(--rebecca-purple);
+  padding: 0.75rem;
+  border: 2px solid var(--portage);
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: var(--ghost-white);
+  font-family: "Lato", sans-serif;
+  word-spacing: 2px;
+  resize: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--rebecca-purple);
+}
+
+.submit-button {
+  border: .1rem solid var(--portage);
+  background: var(--portage);
+  font-size: 0.9rem;
+  border-radius: 5rem;
+  color: var(--ghost-white);
+  padding: .6rem 1.5rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background-color: var(--lavender-floral);
+}
+
+.error-message {
+  color: var(--max-red);
+  font-weight: bold;
+}
+
+.article-item {
+  margin: 1rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.article-item:hover {
+  color: var(--rebecca-purple);
+}
+
+.article-item.selected {
+  color: var(--rebecca-purple);
+  font-style: italic;
+  font-weight: bold;
+}
