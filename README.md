@@ -98,5 +98,10 @@ npm run dev
 | PUT    | /:id       | Update article by ID |
 | DELETE | /id        | Delete article by ID |
 
+--- 
+
+## 📸 Screenshots
+
+![View](https://github.com/bismah-nasir/blog-mongodb/blob/37a3e74c732dd8f9e8ce309a29c45e046ccc2176/mongodb-blog.PNG)
 
 ---
